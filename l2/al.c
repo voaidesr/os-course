@@ -1,0 +1,7 @@
+#include <unistd.h>
+#include <sys/syscall.h>
+
+int main() {
+    syscall(SYS_write, 1, "Hello, world!\n", 14);
+    syscall(SYS_exit, 0);
+}
