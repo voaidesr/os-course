@@ -10,9 +10,9 @@ void *increment(void *args)
 {
     for (int i = 0; i < 1000000; i++)
     {
-        pthread_mutex_lock(&lock);
+        // pthread_mutex_lock(&lock);
         a++;
-        pthread_mutex_unlock(&lock);
+        // pthread_mutex_unlock(&lock);
     }
         return NULL;
 }
